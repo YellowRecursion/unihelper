@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e2b99f367143c24d856d949cfea3879, type: 3}
+  m_Name: GameData
+  m_EditorClassIdentifier: 
+  difficultyColors:
+  - {r: 0.2110359, g: 0.735849, b: 0.3264948, a: 1}
+  - {r: 0.8490566, g: 0.79563075, b: 0.1313634, a: 1}
+  - {r: 0.9245283, g: 0.512508, b: 0.08198643, a: 1}
+  - {r: 0.8207547, g: 0.20441435, b: 0.20441435, a: 1}
+  subjects:
+  - name: "\u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0430"
+    sections:
+    - {fileID: 11400000, guid: 2aef1d1ec8ac367439e2e2f4ef84fcbd, type: 2}
+  - name: "\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435"
+    sections:
+    - {fileID: 11400000, guid: cfdb6ead9092e2d4a95ee1666973627c, type: 2}

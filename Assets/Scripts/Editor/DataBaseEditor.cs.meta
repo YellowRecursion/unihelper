@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3cf199f321f6d6842a083f4e87cb5f0e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - db: {instanceID: 0}
+  - timerSprite: {fileID: 21300000, guid: 501ab17708632774794e353d0ab9ee26, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
