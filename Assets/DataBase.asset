@@ -704,22 +704,6 @@ MonoBehaviour:
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \sin{\log_{\alpha } x}
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - '{\frac {\cos({\log_{\alpha)} x}}{x \ln {\alpha}}}'
-      - -{\frac {\cos({\log_{\alpha)} x}}{x \ln {\alpha}}}
-      - '{\frac {\sin({\log_{\alpha)} x}}{x \ln {\alpha}}}'
-      - -{\frac {\sin({\log_{\alpha)} x}}{x \ln {\alpha}}}
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
       question: x^{e^x}
       questionImage: {fileID: 0}
       answersImage:
@@ -733,9 +717,205 @@ MonoBehaviour:
       - (e^x)x^{e^x}e^x
       - (e^x)x^{e^x-1}e^x-1
       time: 5
-    difficulty: 1
+    difficulty: 0
   - parentBase: {fileID: 11400000}
     levelIndex: 4
+    questions:
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: x\cdot sin(x)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - sin(x) + xcos(x)
+      - x + cos(x)
+      - xsin(x) + xcos(x)
+      - cos(x) - xsin(x)
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: x \cdot tg(x)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - tg(x) + \frac{x}{cos^2(x)}
+      - x + \frac{1}{cos^2(x)}
+      - x + \frac{1}{cos(x)}
+      - tg(x) + \frac{x}{cos(x)}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: x \cdot arcsin(x)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - arcsin(x) + \frac{x}{\sqrt{1-x^2}}
+      - arcsin(x) + \frac{x}{\sqrt{1+x^2}}
+      - arcsin(x) - \frac{x}{\sqrt{1-x^2}}
+      - xarcsin(x) + \frac{x}{\sqrt{1-x^2}}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: \ln{x \cdot \sqrt{x}}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \frac{\ln{x}}{2\sqrt{x}} + \frac{1}{\sqrt{x}}
+      - \frac{\ln{x}}{2\sqrt{x}} - \frac{1}{\sqrt{x}}
+      - \frac{\ln{x}}{\sqrt{x}} - \frac{1}{\sqrt{x}}
+      - \frac{\ln{x}}{x} + \frac{1}{\sqrt{x}}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: x^2 \cdot sin(x)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - 2x sin(x) + x^2 cos(x)
+      - x + cos(x)
+      - x sin(x) + x^2 cos(x)
+      - sin(x) - x^2 cos(x)
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: arctg(x) \cdot cos(x)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \frac{cos(x)}{x^2 + 1} - arctg(x)sin(x)
+      - \frac{cos(x)}{x^2 - 1} - arctg(x)sin(x)
+      - \frac{1}{1+x^2} - sinx
+      - \frac{sin(x)}{x^2 + 1} + arctg(x)cos(x)
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: \ln{x}\ln{x}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \frac{2\ln{x}}{x}
+      - \frac{2}{x}
+      - -\frac{x}{\ln{x}}
+      - \frac{1}{x}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: log_a (x) \cdot cos(x)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \frac{cos(x)}{\ln{(a) x}} - \frac{\ln{(x)} sin(x)}{\ln{(a)}}
+      - \frac{cos(x)}{\ln{(a) x}} + \frac{\ln{(x)} sin(x)}{\ln{(a)}}
+      - \frac{1}{x \cdot \ln{(a)}} - sin(x)
+      - \frac{cos(x)}{\ln{x}}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: e^x \cdot ctg(x)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - e^x \cdot ctg(x) - \frac{e^x}{sin^2(x)}
+      - e^x \cdot ctg(x) + \frac{e^x}{sin^2(x)}
+      - e^x - \frac{1}{sin^2(x)}
+      - \frac{e^x}{sin^2(x)}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: x^a \cdot tg(x)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - a \cdot x^{a-1} \cdot tg(x) + \frac{x^a}{cos^2(x)}
+      - a \cdot x^{a-1} + \frac{1}{cos^2(x)}
+      - a \cdot x^{a-1} + \frac{1}{cos(x)}
+      - a \cdot x^{a-1} \cdot tg(x) + \frac{x^a}{cos(x)}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: x\ln{x}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \ln{x} + 1
+      - \ln{x}
+      - 1 + \frac{1}{x}
+      - \frac{1}{x}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: \sqrt{x} \cdot e^x
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \sqrt{x} \cdot e^x + \frac{e^x}{2\sqrt{x}}
+      - \sqrt{x} \cdot e^x + \frac{1}{e^x}
+      - e^x + \frac{1}{2\sqrt{x}}
+      - x \cdot e^x + \frac{1}{\sqrt{x}}
+      time: 5
+    difficulty: 0
+  - parentBase: {fileID: 11400000}
+    levelIndex: 5
     questions:
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
@@ -748,10 +928,10 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - $5x^4\sin(x)+ x^5\cos(x)$
-      - '$5x^4 + cos(x)$ '
+      - 5x^4sin(x) + x^5cos(x)
+      - 5x^4 + cos(x)
       - x^5sin(x) + 5x^4cos(x)
-      - x^5cos(x) - x^5sin(x
+      - x^5cos(x) - x^5sin(x)
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
@@ -764,10 +944,10 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '-\frac{1}{2}sin\frac{x}{2} '
+      - -\frac{1}{2}sin\frac{x}{2}
       - -sin\frac{x}{2}
-      - -sin\frac{x}{2}
-      - '\frac{sin}{2} '
+      - \frac{sin\frac{x}{2}}{2}
+      - \frac{sin}{2}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
@@ -796,8 +976,8 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - 7^x(1 2b x\ln{7})
-      - 7(1 2b \ln{7})
+      - 7^x(1 + x\ln{7})
+      - 7(1 + \ln{7})
       - 7^x \cdot \ln{x}
       - x(1 + 7^x)
       time: 5
@@ -812,10 +992,10 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '$6x^5 \cdot tg(x) + \frac{x^6}{cos^2(x)}$ '
-      - '$6x^5 + \frac{1}{cos^2(x)}$ '
-      - '$6x^5 + \frac{1}{cos(x)}$ '
-      - '$6x^5 \cdot tg(x) + \frac{x^6}{cos(x)}$ '
+      - 6x^5 \cdot tg(x) + \frac{x^6}{cos^2(x)}
+      - 6x^5 + \frac{1}{cos^2(x)}
+      - 6x^5 + \frac{1}{cos(x)}
+      - 6x^5 \cdot tg(x) + \frac{x^6}{cos(x)}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
@@ -828,15 +1008,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - 3x^2\arcsin(x) + \frac{x^3}{\sqrt{1-x^2}}
-      - x^3 \arcsin(x) + \frac{3x^2}{\sqrt{1-x^2}}
+      - 3x^2arcsin(x) + \frac{x^3}{\sqrt{1-x^2}}
+      - x^3arcsin(x) + \frac{3x^2}{\sqrt{1-x^2}}
       - 3x^2arcsin(x) - \frac{3x^2}{\sqrt{1-x^2}}
       - x^3arcsin(x) + \frac{x^3}{\sqrt{1-x^2}}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: 5^x \cdot e^x
+      question: 5^x e^x
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -844,7 +1024,7 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - \ln{5}5^xe^x+ 5^xe^x
+      - \ln{5}5^xe^x + 5^xe^x
       - \ln{5}x^5e^x
       - \ln{5}x^5e^5 + e^x
       - \ln{5}x^5e^5 - 5^xe^x
@@ -868,7 +1048,7 @@ MonoBehaviour:
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: '9x^2 \cdot sin(x)$ '
+      question: 9x^2 \cdot sin(x)
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -897,178 +1077,14 @@ MonoBehaviour:
       - \frac{1}{1+x^2} - sin8x
       - \frac{2sin(8x)}{4x^2 + 1} + 8arctg(2x)cos(8x)
       time: 5
-    difficulty: 1
-  - parentBase: {fileID: 11400000}
-    levelIndex: 5
-    questions:
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - empty
-      - empty
-      - empty
-      - empty
-      time: 5
-    difficulty: 1
+    difficulty: 0
   - parentBase: {fileID: 11400000}
     levelIndex: 6
     questions:
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: ' x^n'
+      question: \frac{\sqrt{x}}{\ln{(x)}}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1076,15 +1092,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - nx^{n-1}
-      - nx^n
-      - '  \frac{x^n}{n}'
-      - ' \frac{x^n}{n-1}'
+      - \frac{1}{2\sqrt{x}\ln{(x)}} - \frac{1}{\sqrt{x} \ln^2{(x)}}
+      - 2\sqrt{x}\ln{(x)} - \sqrt{x}\ln^2{(x)}
+      - \frac{1}{2\sqrt{x}\ln{(x)}}
+      - \frac{1}{\sqrt{x} \ln^2{(x)}}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: a^x
+      question: \frac{\sqrt{x}}{e^x}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1092,15 +1108,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - a^x* \ln a
-      - xa^{x-1}
-      - (x-1)^{x-1}
-      - x^a
+      - \frac{e^{-x}}{2\sqrt{x}} - \sqrt{x}e^{-x}
+      - \sqrt{x}e^{-x} - \frac{e^{-x}}{2\sqrt{x}}
+      - \frac{1}{2\sqrt{x} - e^x}
+      - \frac{2\sqrt{x}}{e^{-x}}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: e^x
+      question: \frac{x}{\ln{(x)}}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1108,15 +1124,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - e^x
-      - xe^x
-      - 2e^x
-      - xe^{x-1}
+      - \frac{\ln{(x)} - 1}{\ln^2{(x)}}
+      - 1 - \frac{1}{x}
+      - x
+      - \frac{1 + \ln{(x)}}{\ln^2{(x)}}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \log_{\alpha } x
+      question: \frac{x}{sin(x)}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1124,15 +1140,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '\frac{1}{x \ln \alpha} '
-      - '\frac{2}{x \ln \alpha} '
-      - '\frac{1}{ \ln \alpha} '
-      - '\frac{1}{\alpha \ln x } '
+      - \frac{sin(x) - xcos(x)}{sin^2(x)}
+      - 1 - cos(x)
+      - \frac{1 - sin(x)}{cos^2(x)}
+      - \frac{xcos(x) - sins(x)}{cos^2x}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: ln x
+      question: \frac{e^x}{a^x}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1140,15 +1156,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - ' \frac{1}{x}'
-      - \frac {1}{2x}
-      - \frac {2}{x}
-      - \sqrt x
+      - \frac{e^xa^x - \ln{(a) e^xa^x}}{a^{2x}}
+      - \frac{\ln{(a) e^xa^x}}{a^{2x}}
+      - \frac{e^x + \ln{(a) e^xa^x}}{a^{2x}}
+      - e^x - a^x \ln{a}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: ' ctgx'
+      question: \frac{sin(x)}{cos(x)}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1156,15 +1172,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - ' -\frac{1}{ \sin^2 x}'
-      - \frac{1}{ \sin^2 x}
-      - ' \sin^2 x'
-      - -\frac{1}{ \sin x}
+      - \frac{sin^2(x) + cos^2(x)}{cos^2x}
+      - cos(x) + sin(x)
+      - \frac{cos^2(x) - sin^2(x)}{cos(x)}
+      - \frac{sin^2(x) cos^2(x)}{sin^2(x)}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: ' \sin x'
+      question: \frac{arctg(x)}{x}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1172,15 +1188,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - \cos x
-      - 2\cos x
-      - \frac{1}{\cos x}
-      - \frac{1}{2\cos x}
+      - \frac{1}{x(x^2 + 1)} - \frac{arctg(x)}{x^2}
+      - \frac{1}{1 + x^2} - 1
+      - \frac{x^2 + 1}{1} - \frac{arctg(x)}{x}
+      - 1 + \frac{1}{1 + x^2}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \cos x
+      question: \frac{x^a}{\sqrt{x}}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1188,15 +1204,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '- \sin x'
-      - -2\sin x
-      - \sin x
-      - \cos x
+      - (a - \frac{1}{2}) x^{a - \frac{3}{2}}
+      - a \cdot x^{a - 1} - \frac{1}{2\sqrt{x}}
+      - a \cdot x^{a - \frac{3}{2}}
+      - \frac{1}{3} a x^a
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \sqrt x
+      question: \frac{arccos(x)}{cos(x)}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1204,15 +1220,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '\frac{1}{2 \sqrt{x}} '
-      - '2 \sqrt{x} '
-      - '\frac{1}{\sqrt{x}} '
-      - '\frac{2}{\sqrt{x}} '
+      - \frac{arccos(x)sin(x)}{cos^2(x)} - \frac{1}{\sqrt{1-x^2} cos(x) }
+      - -\frac{1}{\sqrt{1-x^2}} + sin(x)
+      - \frac{arccos(x)sin(x)}{cos(x)} - \frac{1}{\sqrt{1-x^2} sin(x) }
+      - cos^2(x) - \frac{1}{\sqrt{1-x^2} cos(x) }
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: tg{x}
+      question: \frac{log_a (x)}{x}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1220,74 +1236,10 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - \frac{1}{cos^2 x}
-      - \frac{1}{2\cos^2 }
-      - \frac{1}{\cos x}
-      - \frac{1}{\cos 2x}
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \arcsin x
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - \frac{1}{\sqrt{1-x^2}}
-      - \frac{2}{\sqrt{1-x^2}}
-      - \frac{1}{\sqrt{1-2x^2}}
-      - \frac{1}{2\sqrt{1-x^2}}
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \arccos x
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - -\frac{1}{\sqrt{1-x^2}}
-      - -\frac{2}{\sqrt{1-x^2}}
-      - -\frac{1}{2\sqrt{1-x^2}}
-      - -\frac{1}{\sqrt{1-2x^2}}
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: sh x
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - ch x
-      - th x
-      - \frac{1}{ch x}
-      - \frac {1}{sh x}
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: ch x
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - sh x
-      - th x
-      - \frac{1}{chx}
-      - \frac{sh x}{ch x}
+      - \frac{1 - \ln{(x)}}{\ln{(a)}x^2}
+      - \frac{1}{x \cdot \ln{a} - 1}
+      - \frac{\ln{(x)}}{\ln{(a)}x}
+      - \frac{\ln{(a)}x^2}{1 - \ln{(x)}}
       time: 5
     difficulty: 0
   - parentBase: {fileID: 11400000}
@@ -1296,7 +1248,7 @@ MonoBehaviour:
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: ' x^n'
+      question: \frac{e^x}{9x}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1304,15 +1256,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - nx^{n-1}
-      - nx^n
-      - ' x^n/n'
-      - ' x^n/(n-1)'
+      - \frac{xe^x - e^x}{9x^2}
+      - \frac{xe^x}{9x^2}
+      - \frac{e^x - x}{9x}
+      - e^x - 1
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: a^x
+      question: \frac{4x^3}{sin(x)}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1320,15 +1272,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - a^x* \ln a
-      - (x-1)a^x
-      - xa^(x-1)
-      - x^a
+      - \frac{4(3x^2sin(x) - x^3cos(x)}{sin^2(x)}
+      - 12x^2 - cos(x)
+      - \frac{3x^2sin(x) - x^3cos(x)}{sin^2(x)}
+      - \frac{4(3x^2sin(x) - x^3cos(x)}{sin(x)}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: e^x
+      question: \frac{5\ln{x}}{2\sqrt{x}}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1336,15 +1288,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - e^x
-      - xe^x
-      - 2e^x
-      - xe^(x-1)
+      - \frac{5(\frac{1}{\sqrt{x}} - \frac{\ln{x}}{2\sqrt{x}})}{2x}
+      - \frac{(\frac{1}{\sqrt{x}} + \frac{\ln{x}}{\sqrt{x}})}{2x}
+      - \frac{5(\frac{1}{\sqrt{x}} - \frac{\ln{x}}2)}{x}
+      - \frac{5}{x} - \frac{1}{\sqrt{x}}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \log_{\alpha } x
+      question: \frac{x^3}{5^x}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1352,15 +1304,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '1/x \ln \alpha '
-      - '2/x \ln \alpha '
-      - '1/\ln \alpha '
-      - '1/\alpha  \ln x '
+      - \frac{3x^2 5^x - \ln(5)x^3 5^x}{5^{2x}}
+      - 3x^2 - \ln(5)5^x
+      - \frac{3x 5^x - \ln(5)x^3 5^x}{5^x}
+      - \frac{x^3 5^x + \ln(5)3x^2 5^x}{5^{2x}}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: ' \c x'
+      question: \frac{3sin(x)}{6cos(x)}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1368,15 +1320,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '1/x '
-      - '1/2x '
-      - '2/x '
-      - '\sqrt{x} '
+      - \frac{sin^2(x) + cos^2(x)}{2cos^2x}
+      - 3(cos(x) + 2sin(x))
+      - \frac{cos^2(x) - sin^2(x)}{2cos(x)}
+      - \frac{sin^2(x) cos^2(x)}{2sin^2(x)}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: ' ctg x'
+      question: \frac{arctg(x)}{x^3}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1384,15 +1336,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - -1/(sin^2 x)
-      - 1/(sin^2 x)
-      - ' \sin^2 x'
-      - 1/(sin x)
+      - \frac{1}{x^3(x^2 + 1)} - \frac{3arctg(x)}{x^4}
+      - \frac{1}{1 + x^2} - 1
+      - \frac{x^2 + 1}{1} - \frac{3arctg(x)}{x^4}
+      - \frac{1}{x^3(x^2 + 1)} + \frac{3arctg(x)}{3x^2}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: ' \sin x'
+      question: \frac{x^6}{\sqrt{x}}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1400,15 +1352,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - \cos x
-      - 2\cos x
-      - 1/\cos x
-      - 1/2\cos x
+      - \frac{11x^{\frac{9}{2}}}{2}
+      - 6x^5 - \frac{1}{2\sqrt{x}}
+      - \frac{6x^{\frac{9}{2}}}{2}
+      - 11x ^ {\frac{9}{2}}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \cos x
+      question: \frac{tg(3x)}{7sin(x)}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1416,15 +1368,15 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '- \sin x'
-      - -2\sin x
-      - \sin x
-      - \cos x
+      - \frac{3}{7sin(x)cos^2(3x)} - \frac{cos(x)tg(3x)}{7sin^2(x)}
+      - \frac{1}{7sin(x)cos^2(3x)} - \frac{7cos(x)tg(3x)}{sin^2(x)}
+      - \frac{1}{cos^2(3x)} - 7cos(x)
+      - \frac{3}{7sin(x)cos(3x)} + \frac{cos(x)tg(3x)}{7sin^2(x)}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: '\sqrt{x} '
+      question: \frac{log_5 (x)}{8x}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1432,26 +1384,10 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '1/2 \sqrt{x} '
-      - '2 \sqrt{x} '
-      - '1/\sqrt{x} '
-      - '2/\sqrt{x} '
-      time: 5
-    - type: 0
-      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \tan x
-      questionImage: {fileID: 0}
-      answersImage:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
-      answers:
-      - 1/(cos^2 x)
-      - 1/2(cos^2 x)
-      - 1/(cos x)
-      - 1/(cos 2x)
+      - \frac{1 - \ln{(x)}}{8\ln(5)x^2}
+      - \frac{1}{x\ln(5) - 1}
+      - \frac{\ln{(x)}}{\ln(5)x}
+      - \frac{\ln(5)x^2}{1 - \ln{(x)}}
       time: 5
     difficulty: 0
   - parentBase: {fileID: 11400000}
@@ -1460,107 +1396,171 @@ MonoBehaviour:
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: '{f^\prime(x) = (3 - 4{x})^5}'
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - -20(3-4{x})^4
+      - 15(3-4{x})^4
+      - 20(3-4{x})^5
+      - 15(3+4{x})^4
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: '{(4x^3)}^\prime'
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - 12x^2
+      - 12x
+      - 4x^2
+      - 12x^3
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: '{(6x-11)}^\prime'
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - 6
+      - -5
+      - 11
+      - 6x
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (\frac{x-1}{x})^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - \frac{1}{x^2}
+      - \frac{2x+1}{x^2}
+      - \frac{x-1}{x^2}
+      - -\frac{1}{x^2}
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: '{\sin(3x+2)}^\prime'
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - '{3\cos(3x+2)}'
+      - '{-\cos(3x+2)}'
+      - '{-3\cos(3x+2)} '
+      - '{\cos(3x+2)}'
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (x^2\cos{x})^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - 2x\cos{x}-x^2\sin{x}
+      - 2x\sin{x}
+      - x^2\sin{x} %2b x^2\sin{x}
+      - -2x\sin{x}
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (\frac{1}{3}x^6)^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - 2x^5
+      - 2x^6
+      - \frac{1}{3}x^5
+      - 6x^5
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (x\cos{x})^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
-    difficulty: 0
+      - \cos{x}-x\sin{x}
+      - \cos{x}+x\sin{x}
+      - -\sin{x}
+      - x-x\sin{x}
+      time: 10
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: (\cos(5x-2))^\prime
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - -5\sin(5x-2)
+      - 5\sin(5x-2)
+      - \sin(5x-2)
+      - -2\sin(5x-2)
+      time: 10
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: (x^2\sin{x})^\prime
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - 2x\sin{x}%2bx^2\cos{x}
+      - -2x\cos{x}
+      - 2x\sin{x}-x^2\cos{x}
+      - 2x\cos{x}
+      time: 10
+    difficulty: 1
   - parentBase: {fileID: 11400000}
     levelIndex: 9
     questions:
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: \frac {\ln x}{e^x}
+      question: (x+2x^2)^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
@@ -1568,123 +1568,319 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - \frac {\frac {e^x}{x}-e^x\ln x}{e^{2x}}
-      - \frac {\frac {e^{2x}}{x}-e^x\ln x}{e^{x}}
-      - \frac {\frac {e^x}{x}-e^{2x}\ln x}{e^{x}}
-      - \frac {\frac {2e^x}{x}-2e^x\ln x}{e^{2x}}
-      time: 5
+      - 1+4x
+      - \sqrt{2}-x
+      - \sqrt{2}+x
+      - x+4
+      time: 15
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: '{(-4x^3+8x-12)}^\prime'
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - -12x^2+8
+      - 4x^2+8
+      - -12x^2-8
+      - 4x^3+8
+      time: 15
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (-4x^2+2x)(2x-x^3)
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - no.one
+      - 2(2x-x^3)
+      - 2(2x+x^3)
+      - (2x-x^3)(x-3x)
+      time: 15
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (\frac{x^2-1}{5-4x})^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - \frac{-4x^3+9x^2-4}{(5-4x)^2}
+      - -\frac{4x^3+9x^2-4}{5-4x}
+      - \frac{x^2}{5}+\frac{1}{4x}
+      - \frac{5}{x^2}+\frac{1}{4x}
+      time: 15
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: '{\sqrt(-6+3x^2)}^\prime'
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - f^\prime ={\frac{3x}{\sqrt{-6+3x^2}}}
+      - f^\prime ={\frac{1}{2\sqrt{3x^2-6}}}
+      - f^\prime ={\frac{x}{2\sqrt{-6+3x^2}}}
+      - f^\prime =9x^2-18
+      time: 15
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (x^3+2x^5-6)^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - x^2+3x^4
+      - 3x^3+10x^4+6
+      - x^3+10x^4-6x
+      - 3x^3+10x^4-6
+      time: 15
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (\sin{3x})^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - 3\cos{x}
+      - 3x\sin{3x}
+      - \cos{3x}
+      - x\cos{3x}
+      time: 15
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (x^4+3x^3+4)^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - 4x^3 + 9x^2
+      - 4x^3 + 9x^2 + 4
+      - 4x^3 + 9x^2 + 4x
+      - 4x^2 + 3x^2 + 4
+      time: 15
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+      question: (\cos(4x))^\prime
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
+      - -4\sin{4x}
+      - 4\cos{-4x}
+      - 4x\sin{4x}
+      - 4x\cos{-4x}
+      time: 15
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
-        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
-      question: question
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438, \u0435\u0441\u043B\u0438 x=1"
+      question: f^\prime = \frac{x^2}{x+1}
       questionImage: {fileID: 0}
       answersImage:
       - {fileID: 0}
       - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
       answers:
-      - empty
-      - empty
-      time: 5
-    difficulty: 2
+      - -0,5
+      - 1
+      - -1
+      - 0,5
+      time: 15
+    difficulty: 1
   - parentBase: {fileID: 11400000}
     levelIndex: 10
-    questions: []
+    questions:
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: \sqrt{1-x^2}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \frac{-x}{\sqrt{1-x^2}}
+      - \frac{x}{\sqrt{1-x^2}}
+      - \frac{1}{\sqrt{1-x^2}}
+      - \frac{2x}{\sqrt{1-x^2}}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: \frac{x^2}{2}+\cos{5x}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - f^\prime(x)= x-5\sin{5x}
+      - f^\prime(x)= x-\sin{5x}
+      - f^\prime(x)= x+5\sin{5x}
+      - f^\prime(x)= \frac{x}{4}-5\sin{5x}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: y(x)=(2x+1)^3
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - y^\prime(x) = 6(2x+1)^2
+      - y^\prime(x) = 3(2x+1)
+      - y^\prime(x) = 3(2x+1)^2
+      - y^\prime(x) = 6(2x+1)
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: y(x) = (0,2x-7)^5
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - y^\prime(x)=(0,2x-7)^4
+      - y^\prime(x)=(0,2x-7)^3
+      - y^\prime(x)=5(0,2x-7)^4
+      - y^\prime(x)=5x^4-7
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: y=x^2\cdot\sqrt[3]{x^2}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \frac{8}{3}x^\frac{5}{3}
+      - \frac{3}{8}x^\frac{3}{5}
+      - \frac{1}{3}x^\frac{5}{3}
+      - \frac{8}{3}x^\frac{3}{5}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: 'f^\prime(x) = \frac{3x^2-2}{x-1}  if x = 2 '
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - 1
+      - 2
+      - 26
+      - 22
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: y(x) = (4x+9)^-3
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - y^\prime(x)=-12(4x+9)^-4
+      - y^\prime(x)=-12(4x+9)^-2
+      - y^\prime(x)=3(4x+9)^-2
+      - y^\prime(x)=3(4x+9)^-4
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: f(x) = \frac{6}{5}x^6-\frac{1}{4}x^4+\cos{3x}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - f^\prime(x) = \frac{36}{5}x^5-x^3-3\sin{3x}
+      - f^\prime(x) = \frac{1}{5}x^5-x^3-3\cos{3x}
+      - f^\prime(x) = x^5-x^3-3\sin{3x}
+      - f^\prime(x) = \frac{36}{5}x^5-x^4-3\sin{3x}
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: y(x) = (3x-1)^3
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - y^\prime(x)=3(3x-1)
+      - y^\prime(x)=9(3x-1)^2
+      - y^\prime(x)=9(3x-1)
+      - y^\prime(x)=3(3x-1)^2
+      time: 5
+    - type: 0
+      text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
+        \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
+      question: y= \frac{2x+3}{x^2-5x+5}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \frac{-2x^2-6x+25}{(x^2-5x+5)^2}
+      - \frac{-2x^2-6x+25}{x^2-5x+5}
+      - \frac{-2x^2+6x}{(x^2-5x+5)^2}
+      - \frac{-2x^2-3x+25}{(x^2-5x+5)^2}
+      time: 5
     difficulty: 2
   - parentBase: {fileID: 11400000}
     levelIndex: 11
@@ -1702,8 +1898,3 @@ MonoBehaviour:
     levelIndex: 14
     questions: []
     difficulty: 3
-  difficultyColors:
-  - {r: 0.14983979, g: 0.6509434, b: 0.36354572, a: 1}
-  - {r: 0.8301887, g: 0.7656101, b: 0.23104309, a: 1}
-  - {r: 0.8301887, g: 0.39467025, b: 0.23887502, a: 1}
-  - {r: 0.8584906, g: 0.22272164, b: 0.2645987, a: 1}
