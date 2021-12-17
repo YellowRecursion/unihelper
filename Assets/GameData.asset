@@ -21,6 +21,3 @@ MonoBehaviour:
   - name: "\u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0430"
     sections:
     - {fileID: 11400000, guid: 2aef1d1ec8ac367439e2e2f4ef84fcbd, type: 2}
-  - name: "\u043F\u0440\u043E\u0433\u0440\u0430\u043C\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435"
-    sections:
-    - {fileID: 11400000, guid: cfdb6ead9092e2d4a95ee1666973627c, type: 2}

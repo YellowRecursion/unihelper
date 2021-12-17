@@ -1486,7 +1486,7 @@ MonoBehaviour:
       answers:
       - 2x\cos{x}-x^2\sin{x}
       - 2x\sin{x}
-      - x^2\sin{x} %2b x^2\sin{x}
+      - x^2\sin{x} + x^2\sin{x}
       - -2x\sin{x}
       time: 10
     - type: 0
@@ -1548,7 +1548,7 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - 2x\sin{x}%2bx^2\cos{x}
+      - 2x\sin{x}+x^2\cos{x}
       - -2x\cos{x}
       - 2x\sin{x}-x^2\cos{x}
       - 2x\cos{x}
@@ -1882,19 +1882,3 @@ MonoBehaviour:
       - \frac{-2x^2-3x+25}{(x^2-5x+5)^2}
       time: 5
     difficulty: 2
-  - parentBase: {fileID: 11400000}
-    levelIndex: 11
-    questions: []
-    difficulty: 2
-  - parentBase: {fileID: 11400000}
-    levelIndex: 12
-    questions: []
-    difficulty: 3
-  - parentBase: {fileID: 11400000}
-    levelIndex: 13
-    questions: []
-    difficulty: 3
-  - parentBase: {fileID: 11400000}
-    levelIndex: 14
-    questions: []
-    difficulty: 3
