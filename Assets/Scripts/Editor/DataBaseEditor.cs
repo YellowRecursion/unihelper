@@ -7,7 +7,9 @@ using System.Net;
 [CustomEditor(typeof(DataBase))]
 public class DataBaseEditor : Editor // жаль того, кто сюда залез...
 {
-    public int j;
+    public GameData gameData;
+
+    public static int j;
     public DataBase db;
     public GUIStyle bigFont;
     public Sprite timerSprite;
@@ -20,6 +22,11 @@ public class DataBaseEditor : Editor // жаль того, кто сюда за�
     private GUIStyle title;
     private GUIStyle big;
     private GUIStyle red;
+
+    private bool notDirty;
+    private static bool MainMenu = false;
+
+    float defaultTime = 10f;
 
     private void SetStyles()
     {
@@ -59,7 +66,7 @@ public class DataBaseEditor : Editor // жаль того, кто сюда за�
         red.fontSize = 28;
         red.normal.textColor = Color.red;
     }
-    public bool MainMenu = false;
+   
     private void OnEnable()
     {
         db = (DataBase)target;
@@ -67,109 +74,25 @@ public class DataBaseEditor : Editor // жаль того, кто сюда за�
     }
     public override void OnInspectorGUI()
     {
-        bool notDirty = false;
-        
+        notDirty = false;
 
-        EditorGUILayout.LabelField("База с данными об уровнях", big);
-        GUILayout.Space(10);
-        db.sectionName = EditorGUILayout.TextField("Название раздела", db.sectionName);
-        GUILayout.Space(10);
+        EditorGUILayout.LabelField("Файл с уровнями", big);
+       
         DrawSaveLine();
-        GUI.changed = false;
+        //GUI.changed = false;
         if (MainMenu == false)
         {
-            if (db.levels.Count == 0)
-            {
-                EditorGUILayout.LabelField("Уровней нет");
-            }
-            else
-            {
-                for (int i = 0; i < db.levels.Count; i++)
-                {
-                    EditorGUILayout.BeginHorizontal("box");
-                    db.levels[i].levelIndex = i;
-                    db.levels[i].parentBase = db;
-                    EditorGUILayout.LabelField((db.levels[i].levelIndex + 1).ToString(), header, GUILayout.Width(25));
-                    db.levels[i].difficulty = (Level.Difficulty)EditorGUILayout.EnumPopup(db.levels[i].difficulty, GUILayout.Width(120), GUILayout.Height(10));
-                    //db.levels[i].stars = EditorGUILayout.IntField(db.levels[i].stars, GUILayout.Width(60));
-                    if (GUILayout.Button("Редактировать уровень"))
-                    {
-                        j = i;
-                        MainMenu = true;
-                        EditorGUILayout.EndHorizontal();
-                        dirty = false;
-                        notDirty = true;
-                        break;
-                    }
-                    if (GUILayout.Button("X", GUILayout.Width(20), GUILayout.Height(20)))
-                    {
-                        db.levels.RemoveAt(i);
-                        EditorGUILayout.EndHorizontal();
-                        dirty = true;
-                        break;
-                    }
-                    EditorGUILayout.EndHorizontal();
-                    GUILayout.Space(10);
-                }
-
-            }
-
-            if (GUILayout.Button("Добавить уровень"))
-            {
-                db.levels.Add(new Level());
-                dirty = true;
-            }
+            DrawLevelsList();
         }
         else
         {
-            if (GUILayout.Button("◄", GUILayout.Width(20), GUILayout.Height(20)))
+            if (j >= db.levels.Count)
             {
                 MainMenu = false;
-                notDirty = true;
-            }
-
-            GUILayout.Space(10);
-            if (GUILayout.Button("NULL all"))
-            {
-                for (int k = 0; k < db.levels[j].questions.Count; k++)
-                {
-                    db.levels[j].questions[k].questionImage = null;
-                    for (int o = 0; o < db.levels[j].questions[k].answers.Count; o++)
-                    {
-                        db.levels[j].questions[k].answersImage[o] = null;
-                    }
-                }
-            }
-            if (GUILayout.Button("Update all"))
-            {
-                for (int k = 0; k < db.levels[j].questions.Count; k++)
-                {
-                    db.levels[j].questions[k].questionImage = GetFormulaImage(db.levels[j].questions[k].question);
-                    for (int o = 0; o < db.levels[j].questions[k].answers.Count; o++)
-                    {
-                        db.levels[j].questions[k].answersImage[o] = GetFormulaImage(db.levels[j].questions[k].answers[o]);
-                    }
-                }
-            }
-            GUILayout.Space(10);
-
-            if (db.levels[j].questions.Count == 0)
-            {
-                EditorGUILayout.LabelField("Вопросов нет");
             }
             else
             {
-                for (int k = 0; k < db.levels[j].questions.Count; k++)
-                {
-                    if (!PrintQuestion(db.levels[j].questions[k], k)) break;
-                }
-            }
-
-            if (GUILayout.Button("Добавить вопрос"))
-            {
-                db.levels[j].questions.Add(new Question());
-                if (db.levels[j].questions.Count >= 2) db.levels[j].questions[db.levels[j].questions.Count - 1].text = db.levels[j].questions[db.levels[j].questions.Count - 2].text;
-                dirty = true;
+                DrawLevel();
             }
         }
         if (GUI.changed && !notDirty) dirty = true;
@@ -185,6 +108,192 @@ public class DataBaseEditor : Editor // жаль того, кто сюда за�
                 dirty = false;
             }
             GUILayout.Space(20);
+        }
+    }
+
+    private void DrawLevelsList()
+    {
+        GUILayout.Space(20);
+        EditorGUILayout.LabelField("Настройки раздела:");
+        db.sectionName = EditorGUILayout.TextField("Название раздела", db.sectionName);
+        GUILayout.Space(20);
+
+        if (db.levels.Count == 0)
+        {
+            EditorGUILayout.LabelField("Уровней нет");
+        }
+        else
+        {
+            for (int i = 0; i < db.levels.Count; i++)
+            {
+
+                EditorGUILayout.BeginVertical("box");
+                EditorGUILayout.BeginHorizontal();
+                db.levels[i].levelIndex = i;
+                db.levels[i].parentBase = db;
+                EditorGUILayout.LabelField((db.levels[i].levelIndex + 1).ToString(), header, GUILayout.Width(25));
+                db.levels[i].difficulty = (Level.Difficulty)EditorGUILayout.EnumPopup(db.levels[i].difficulty, GUILayout.Width(120), GUILayout.Height(10));
+                //db.levels[i].stars = EditorGUILayout.IntField(db.levels[i].stars, GUILayout.Width(60));
+                EditorGUILayout.LabelField(" ");
+                if (GUILayout.Button("X", GUILayout.Width(20), GUILayout.Height(20)))
+                {
+                    db.levels.RemoveAt(i);
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.EndVertical();
+                    dirty = true;
+                    break;
+                }
+                EditorGUILayout.EndHorizontal();
+
+                GUILayout.Space(10);
+
+                EditorGUILayout.LabelField("Количество вопросов: " + db.levels[i].questions.Count);
+
+                if (db.levels[i].questions.Count > 0)
+                {
+                    float allTime = 0f;
+                    for (int j = 0; j < db.levels[i].questions.Count; j++)
+                    {
+                        allTime += db.levels[i].questions[j].time;
+                    }
+                    EditorGUILayout.LabelField("Среднее время: " + Mathf.Round(allTime / db.levels[i].questions.Count) + " c.");
+                    GUILayout.Space(10);
+
+                    EditorGUILayout.LabelField("Содержание уровня:");
+                    EditorGUILayout.BeginHorizontal();
+                    for (int j = 0; j < db.levels[i].questions.Count; j++)
+                    {
+                        if (j == 4) break;
+
+                        if (db.levels[i].questions[j].questionImage != null)
+                        {
+                            GUILayout.Box(db.levels[i].questions[j].questionImage, GUILayout.Width(90), GUILayout.Height(40));
+                        }
+                        else
+                        {
+                            db.levels[i].questions[j].questionImage = TryGetFormulaImageFromFile(db.levels[i].questions[j].question);
+                        }
+                    }
+                    EditorGUILayout.EndHorizontal();
+                }
+                GUILayout.Space(10);
+                if (GUILayout.Button("Редактировать уровень"))
+                {
+                    j = i;
+                    MainMenu = true;
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUILayout.EndVertical();
+                    dirty = false;
+                    notDirty = true;
+                    break;
+                }
+                EditorGUILayout.EndVertical();
+                GUILayout.Space(20);
+            }
+
+        }
+
+        if (GUILayout.Button("Добавить уровень"))
+        {
+            db.levels.Add(new Level());
+            dirty = true;
+        }
+    }
+
+    private void DrawLevel()
+    {
+        GUILayout.Space(20);
+        EditorGUILayout.BeginHorizontal();
+        if (GUILayout.Button("◄", GUILayout.Width(40), GUILayout.Height(40)))
+        {
+            MainMenu = false;
+            notDirty = true;
+        }
+        EditorGUILayout.LabelField("Уровень " + (j + 1), big);
+        EditorGUILayout.EndHorizontal();
+
+        GUILayout.Space(20);
+        /*if (GUILayout.Button("NULL all"))
+        {
+            for (int k = 0; k < db.levels[j].questions.Count; k++)
+            {
+                db.levels[j].questions[k].questionImage = null;
+                for (int o = 0; o < db.levels[j].questions[k].answers.Count; o++)
+                {
+                    db.levels[j].questions[k].answersImage[o] = null;
+                }
+            }
+        }*/
+        EditorGUILayout.BeginHorizontal();
+        defaultTime = EditorGUILayout.FloatField("Время (с.)", defaultTime);
+        if (GUILayout.Button("Применить ко всем вопросам"))
+        {
+            for (int k = 0; k < db.levels[j].questions.Count; k++)
+            {
+                db.levels[j].questions[k].time = defaultTime;
+            }
+        }
+        EditorGUILayout.EndHorizontal();
+        GUILayout.Space(6);
+        if (GUILayout.Button("Прожать все кнопки UPD"))
+        {
+            for (int k = 0; k < db.levels[j].questions.Count; k++)
+            {
+                db.levels[j].questions[k].questionImage = GetFormulaImage(db.levels[j].questions[k].question);
+                for (int o = 0; o < db.levels[j].questions[k].answers.Count; o++)
+                {
+                    db.levels[j].questions[k].answersImage[o] = GetFormulaImage(db.levels[j].questions[k].answers[o]);
+                }
+            }
+        }
+        GUILayout.Space(6);
+        if (GUILayout.Button("Запустить этот уровень"))
+        {
+            int levelToStart = 1;
+
+            if (gameData) gameData.SelectedLevel = db.levels[j];
+
+            if (UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene().buildIndex == levelToStart)
+                EditorApplication.EnterPlaymode();
+            else
+            {
+                if (!UnityEditor.SceneManagement.EditorSceneManager.GetActiveScene().isDirty)
+                {
+                    try
+                    {
+                        UnityEditor.SceneManagement.EditorSceneManager.OpenScene(UnityEngine.SceneManagement.SceneUtility.GetScenePathByBuildIndex(levelToStart), UnityEditor.SceneManagement.OpenSceneMode.Single);
+                        EditorApplication.EnterPlaymode();
+                    }
+                    catch
+                    {
+                        Debug.LogError("Ошибка при запуске нужной сцены");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Сцена не сохранена!");
+                }
+            }
+        }
+        GUILayout.Space(20);
+
+        if (db.levels[j].questions.Count == 0)
+        {
+            EditorGUILayout.LabelField("Вопросов нет");
+        }
+        else
+        {
+            for (int k = 0; k < db.levels[j].questions.Count; k++)
+            {
+                if (!PrintQuestion(db.levels[j].questions[k], k)) break;
+            }
+        }
+
+        if (GUILayout.Button("Добавить вопрос"))
+        {
+            db.levels[j].questions.Add(new Question());
+            if (db.levels[j].questions.Count >= 2) db.levels[j].questions[db.levels[j].questions.Count - 1].text = db.levels[j].questions[db.levels[j].questions.Count - 2].text;
+            dirty = true;
         }
     }
 
