@@ -1881,4 +1881,168 @@ MonoBehaviour:
       - \frac{-2x^2+6x}{(x^2-5x+5)^2}
       - \frac{-2x^2-3x+25}{(x^2-5x+5)^2}
       time: 5
-    difficulty: 2
+    difficulty: 1
+  - parentBase: {fileID: 11400000}
+    levelIndex: 11
+    questions:
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F.
+        \u041D\u0430\u0439\u0442\u0438 z'_x "
+      question: xy + 3x^4 + y^2
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - 12x^3 + y
+      - y + y^2
+      - x + 3x^4 + 2y
+      - x + 2y
+      time: 30
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F
+        z =. \u041D\u0430\u0439\u0442\u0438 z'_x "
+      question: x^6 + y^5 - 3 \cdot x \cdot y^2
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - 6x^5 - 3y^2
+      - 5y^4 - 6yx
+      - -3y^2
+      - 6x^5 + 5y^4 - 3y^2
+      time: 30
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F.
+        \u041D\u0430\u0439\u0442\u0438 z'_x "
+      question: \frac{cos(y^2 + 1)}{x}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - -\frac{cos(y^2 + 1)}{x^2}
+      - -\frac{sin(y^2 + 1)}{x^2}
+      - -\frac{sin(y^2 + 1)}{x}
+      - -\frac{2sin(y^2 + 1)}{x^2}
+      time: 30
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F.
+        \u041D\u0430\u0439\u0442\u0438 z'_x "
+      question: ln(x^2 - y^2)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - \frac{2x}{x^2 - y^2}
+      - \frac{1}{x^2 - y^2}
+      - \frac{-2y}{x^2 - y^2}
+      - \frac{1}{x + y}
+      time: 30
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F.
+        \u041D\u0430\u0439\u0442\u0438 z'_y "
+      question: x^2 sin(y) + y^2 cos(x)
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - x^2cos(y) + 2ycos(x)
+      - 2(xsin(y) + ycos(x))
+      - x^2cos(y) + y^2 cos(x)
+      - 2(sin(y) + cos(x))
+      time: 30
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F.
+        \u041D\u0430\u0439\u0442\u0438 z'_x "
+      question: \frac{y}{x^3 - y^3}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - '- \frac{3x^2y}{(x^3 - y^3)^2}'
+      - \frac{3x^2y}{x^3 - y^3}
+      - \frac{1}{3x^2 - y^3}
+      - '- \frac{y}{(x^3 - y^3)^2}'
+      time: 30
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F.
+        \u041D\u0430\u0439\u0442\u0438 \\frac{dz}{dx}"
+      question: -4yx^2 + \frac{y}{x} - 6x
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - -8xy - \frac{y}{x^2} - 6
+      - -8xy + \frac{y}{x^2} - 6
+      - -4x^2 + \frac{1}{x} - 6
+      - -4x^2 + \frac{1}{x}
+      time: 30
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F.
+        \u041D\u0430\u0439\u0442\u0438 z'_y "
+      question: ctg(y - x) + 3^{1-y}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - -\frac{1}{sin^2(y-x)} - 3^{1-y} \cdot ln3
+      - -\frac{1}{sin^2(y-x)} + 3^{1-y} \cdot ln3
+      - \frac{1}{(y-x)^2} + 3^{1-y} \cdot ln3
+      - \frac{1}{sin^2(y-x)}
+      time: 30
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F.
+        \u041D\u0430\u0439\u0442\u0438 \\frac{dz}{dy}"
+      question: yx^2 + \frac{x}{y} - 5y^2
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - x^2 - \frac{x}{y^2} - 10y
+      - 2yx + \frac{1}{y} - 10y
+      - -10y
+      - y + \frac{1}{y} - 5y^2
+      time: 30
+    - type: 0
+      text: "\u0417\u0430\u0434\u0430\u043D\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F.
+        \u041D\u0430\u0439\u0442\u0438 \\frac{dz}{dy}"
+      question: y^{5-x}
+      questionImage: {fileID: 0}
+      answersImage:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      answers:
+      - (5-x)y^{4-x}
+      - (5-x)y^{5-x} \cdot ln5
+      - y^{5-x} \cdot ln5
+      - y^{5-x}
+      time: 30
+    difficulty: 1
