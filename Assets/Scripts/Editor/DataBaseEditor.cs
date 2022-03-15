@@ -379,7 +379,7 @@ public class DataBaseEditor : Editor // жаль того, кто сюда за�
 
     public Texture2D TryGetFormulaImageFromFile(string formula)
     {
-        var path = Application.dataPath + "/ExpressionImages/";
+        var path = Application.dataPath + "/Resources/ExpressionImages/";
         Texture2D texture = new Texture2D(2, 2);
         if (File.Exists(path + Encryption.SimpleEncrypt(formula) + ".png"))
         {
@@ -391,7 +391,8 @@ public class DataBaseEditor : Editor // жаль того, кто сюда за�
 
     public Texture2D GetFormulaImage(string formula)
     {
-        var path = Application.dataPath + "/ExpressionImages/";
+        var path = Application.dataPath + "/Resources/ExpressionImages/";
+
 
         formula = formula.Replace("%2b", "%+");
         var url = "http://chart.apis.google.com/chart?cht=tx&chl=" + WebUtility.UrlEncode(formula);

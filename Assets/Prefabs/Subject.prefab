@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 629193238036396811}
   - component: {fileID: 2156169496693533988}
   - component: {fileID: 6761799292917252101}
+  - component: {fileID: 8599100325954586999}
   m_Layer: 5
   m_Name: Subject
   m_TagString: Untagged
@@ -147,6 +148,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 629193239370792396}
+--- !u!114 &8599100325954586999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629193238036396815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377c7ab06dfcf494983bad857905cb27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 2
+  startClip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 7c2a6099fb40673428164c0e07c26aa6, type: 3}
+  endClip: {fileID: 0}
+  mixer: {fileID: -6777982576123015022, guid: 1d0775ebad68fbb4bb5b3e6f64dc3f28, type: 2}
+  loop: 0
+  playOnAwake: 0
+  dontPlayWhileSoundEnd: 0
+  itButton: 0
+  playInNewObject: 1
+  volume: 0.6
+  randomPitch: 0
+  pitchMin: 0.7
+  pitchMax: 1.3
+  au: {fileID: 0}
 --- !u!1 &629193239370792398
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class DirectoryGetter
 
     public static string Get()
     {
-        if (Application.isMobilePlatform)
+        /*if (Application.isMobilePlatform)
         {
             if (p == string.Empty)
             {
@@ -53,7 +53,16 @@ public class DirectoryGetter
             p = Application.persistentDataPath;
             CreateGameFolder();
             return p;
+        }*/
+
+        if (string.IsNullOrEmpty(p))
+        {
+            p = Application.persistentDataPath;
+            CreateGameFolder();
+            Debug.Log("Data Directory: " + p);
         }
+        
+        return p;
     }
     private static void CreateGameFolder()
     {

@@ -40,7 +40,7 @@ public class LevelsMenu : MonoBehaviour
             bool locked = false;
             if (i > 0)
             {
-                if (dataBase.levels[i - 1].GetStars() == 0) locked = true;
+                if (dataBase.levels[i - 1].Stars == 0) locked = true;
             }
             
             elements[i].GetComponent<LevelButtonSetuper>().Setup(this, dataBase.levels[i], i + 1, locked);

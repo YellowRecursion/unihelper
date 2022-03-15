@@ -35,6 +35,11 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI correctAnswersText;
     public GameObject nextLevelButton;
 
+    [Header("Sound FX")]
+    public SoundManager correctAnswerSound;
+    public SoundManager incorrectAnswerSound;
+    public SoundManager timerSound;
+
     // private vars
     private int currentQuestion;
     private float timer;
@@ -45,6 +50,8 @@ public class GameManager : MonoBehaviour
     private int correctAnswersCount;
     private bool paused;
     private List<int> mixedAnswers = new List<int>();
+    private List<int> mistakes = new List<int>();
+    private float levelPlayTime;
 
     private void Start()
     {
@@ -179,7 +186,9 @@ public class GameManager : MonoBehaviour
             if (!paused && timer > 0)
             {
                 timer -= Time.deltaTime;
+                string oldText = timerText.text;
                 timerText.text = Mathf.Floor(timer).ToString();
+                if (oldText != timerText.text) timerSound.Play();
                 timerBar.fillAmount = timer / gameData.SelectedLevel.questions[currentQuestion].time;
                 if (timer <= 0)
                 {
@@ -193,6 +202,11 @@ public class GameManager : MonoBehaviour
             timerText.text = "0";
             timerBar.fillAmount = 0f;
         }
+
+        if (!paused)
+        {
+            levelPlayTime += Time.deltaTime;
+        }
     }
 
     // Срабатывает при нажатии на кнопку с ответом
@@ -200,7 +214,17 @@ public class GameManager : MonoBehaviour
     {
         if (timerStopped) return;
         givedAnswer = index;
-        if (GetIndexFromMixedAnswers(givedAnswer) == GetIndexFromMixedAnswers(correctAnswer)) correctAnswersCount++;
+        if (GetIndexFromMixedAnswers(givedAnswer) == GetIndexFromMixedAnswers(correctAnswer))
+        {
+            correctAnswersCount++;
+            correctAnswerSound.Play();
+        }
+        else
+        {
+            mistakes.Add(currentQuestion + 1);
+            //incorrectAnswerSound.Play();
+            Handheld.Vibrate();
+        }
         Debug.Log("correctAnswersCount = " + correctAnswersCount);
         StartCoroutine(StartQuestion(currentQuestion + 1));
     }
@@ -231,10 +255,17 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        gameData.SelectedLevel.SetStars(countOfStars);
+        if (correctAnswersCount > gameData.SelectedLevel.CorrectAnswersCount)
+        {
+            gameData.SelectedLevel.Stars = countOfStars;
+            gameData.SelectedLevel.CorrectAnswersCount = correctAnswersCount;
+            gameData.SelectedLevel.MistakeIndexes = mistakes.ToArray();
+        }
 
         if (countOfStars == 0) nextLevelButton.SetActive(false);
         if (gameData.SelectedLevel.levelIndex >= gameData.SelectedLevel.parentBase.levels.Count - 1) nextLevelButton.SetActive(false);
+
+        GameData.TotalGameplayTime += levelPlayTime;
     }
 
     private bool IsCorrectAnswersSatisfyTreshold(float treshold)

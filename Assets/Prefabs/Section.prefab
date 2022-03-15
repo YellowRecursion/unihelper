@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 6307933780672445409}
   - component: {fileID: 4818111678856375758}
   - component: {fileID: 303914855463474296}
+  - component: {fileID: 549017179445127502}
   m_Layer: 5
   m_Name: Section
   m_TagString: Untagged
@@ -282,3 +283,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 6307933780415069478}
+--- !u!114 &549017179445127502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6307933780672445413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377c7ab06dfcf494983bad857905cb27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 2
+  startClip: {fileID: 0}
+  clip: {fileID: 8300000, guid: 7c2a6099fb40673428164c0e07c26aa6, type: 3}
+  endClip: {fileID: 0}
+  mixer: {fileID: -6777982576123015022, guid: 1d0775ebad68fbb4bb5b3e6f64dc3f28, type: 2}
+  loop: 0
+  playOnAwake: 0
+  dontPlayWhileSoundEnd: 0
+  itButton: 0
+  playInNewObject: 1
+  volume: 0.6
+  randomPitch: 0
+  pitchMin: 0.7
+  pitchMax: 1.3
+  au: {fileID: 0}

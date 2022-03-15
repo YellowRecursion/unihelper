@@ -48,4 +48,25 @@ public class GameData : ScriptableObject
             _selectedLevel = value;
         }
     }
+
+    public static float TotalGameplayTime
+    {
+        get
+        {
+            float t = 0f;
+            if (DataSaver.OpenToRead("TotalGameplayTime"))
+            {
+                t = DataSaver.ReadLineFloat();
+                DataSaver.Close();
+            }
+
+            return t;
+        }
+        set
+        {
+            DataSaver.OpenToWrite("TotalGameplayTime");
+            DataSaver.WriteLine(value);
+            DataSaver.Close();
+        }
+    }
 }
