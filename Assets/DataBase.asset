@@ -32,7 +32,7 @@ MonoBehaviour:
       - nx^n
       - '  \frac{x^n}{n}'
       - ' \frac{x^n}{n-1}'
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -48,7 +48,7 @@ MonoBehaviour:
       - xa^{x-1}
       - (x-1)^{x-1}
       - x^a
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -64,7 +64,7 @@ MonoBehaviour:
       - xe^x
       - 2e^x
       - xe^{x-1}
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -80,7 +80,7 @@ MonoBehaviour:
       - '\frac{2}{x \ln \alpha} '
       - '\frac{1}{ \ln \alpha} '
       - '\frac{1}{\alpha \ln x } '
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -96,7 +96,7 @@ MonoBehaviour:
       - \frac {1}{2x}
       - \frac {2}{x}
       - \sqrt x
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -112,7 +112,7 @@ MonoBehaviour:
       - \frac{1}{ \sin^2 x}
       - ' \sin^2 x'
       - -\frac{1}{ \sin x}
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -128,7 +128,7 @@ MonoBehaviour:
       - 2\cos x
       - \frac{1}{\cos x}
       - \frac{1}{2\cos x}
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -144,7 +144,7 @@ MonoBehaviour:
       - -2\sin x
       - \sin x
       - \cos x
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -160,7 +160,7 @@ MonoBehaviour:
       - '2 \sqrt{x} '
       - '\frac{1}{\sqrt{x}} '
       - '\frac{2}{\sqrt{x}} '
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -176,7 +176,7 @@ MonoBehaviour:
       - \frac{1}{2\cos^2 }
       - \frac{1}{\cos x}
       - \frac{1}{\cos 2x}
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -192,7 +192,7 @@ MonoBehaviour:
       - \frac{2}{\sqrt{1-x^2}}
       - \frac{1}{\sqrt{1-2x^2}}
       - \frac{1}{2\sqrt{1-x^2}}
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -208,7 +208,7 @@ MonoBehaviour:
       - -\frac{2}{\sqrt{1-x^2}}
       - -\frac{1}{2\sqrt{1-x^2}}
       - -\frac{1}{\sqrt{1-2x^2}}
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -224,7 +224,7 @@ MonoBehaviour:
       - th x
       - \frac{1}{ch x}
       - \frac {1}{sh x}
-      time: 7
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -240,7 +240,7 @@ MonoBehaviour:
       - th x
       - \frac{1}{chx}
       - \frac{sh x}{ch x}
-      time: 7
+      time: 20
     difficulty: 0
   - parentBase: {fileID: 11400000}
     levelIndex: 1
@@ -304,10 +304,10 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '1/x \ln \alpha '
-      - '2/x \ln \alpha '
-      - '1/\ln \alpha '
-      - '1/\alpha  \ln x '
+      - \frac{1}{x \ln \alpha }
+      - \frac{2}{x \ln \alpha }
+      - \frac{1}{\ln \alpha }
+      - \frac{1}{\alpha  \ln x }
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
@@ -320,9 +320,9 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '1/x '
-      - '1/2x '
-      - '2/x '
+      - 1
+      - \frac{1}{2x}
+      - \frac{2}{x}
       - '\sqrt{x} '
       time: 5
     - type: 0
@@ -336,10 +336,10 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - -1/(sin^2 x)
-      - 1/(sin^2 x)
+      - -\frac{1}{sin^2 x}
+      - \frac{1}{sin^2 x}
       - ' \sin^2 x'
-      - 1/(sin x)
+      - \frac{1}{sinx}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
@@ -354,8 +354,8 @@ MonoBehaviour:
       answers:
       - \cos x
       - 2\cos x
-      - 1/\cos x
-      - 1/2\cos x
+      - \frac{1}{cosx}
+      - \frac{1}{2cosx}
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
@@ -384,10 +384,10 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - '1/2 \sqrt{x} '
+      - \frac{1}{2 \sqrt{x}
       - '2 \sqrt{x} '
-      - '1/\sqrt{x} '
-      - '2/\sqrt{x} '
+      - '\frac{1}{\sqrt{x}} '
+      - '\frac{2}{\sqrt{x}} '
       time: 5
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
@@ -400,10 +400,10 @@ MonoBehaviour:
       - {fileID: 0}
       - {fileID: 0}
       answers:
-      - 1/(cos^2 x)
-      - 1/2(cos^2 x)
-      - 1/(cos x)
-      - 1/(cos 2x)
+      - \frac{1}{(cos^2 x)}
+      - \frac{1}{2(cos^2 x)}
+      - \frac{1}{(cos x)}
+      - \frac{1}{(cos 2x)}
       time: 5
     difficulty: 0
   - parentBase: {fileID: 11400000}
@@ -472,7 +472,7 @@ MonoBehaviour:
       - \frac {4}{3}x
       - \frac {3}{4}x
       - -2x^4
-      time: 7
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -488,7 +488,7 @@ MonoBehaviour:
       - 0.25x^2
       - 5x^2
       - '\frac {0,5} {3}x^2 '
-      time: 7
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -504,7 +504,7 @@ MonoBehaviour:
       - 6x-5-1
       - x^3-5x^2
       - 3x-5
-      time: 7
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -520,7 +520,7 @@ MonoBehaviour:
       - x^3%2b5
       - 6x%2b5
       - 3x^2%2b5x
-      time: 7
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -536,7 +536,7 @@ MonoBehaviour:
       - 26x
       - 13x
       - -13x
-      time: 7
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -552,7 +552,7 @@ MonoBehaviour:
       - 6x^3-6x^2%2b6x
       - 6x^2-3x%2b6
       - 6x^2-12x%2b6
-      time: 7
+      time: 10
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -568,7 +568,7 @@ MonoBehaviour:
       - 6x^2-4x-1
       - 9x^2-2x-1
       - 9x^2-4x
-      time: 7
+      time: 10
     difficulty: 0
   - parentBase: {fileID: 11400000}
     levelIndex: 3
@@ -588,7 +588,7 @@ MonoBehaviour:
       - -\cos x \cos (cos x)
       - -\sin x \sin (cos x)
       - -\sin x \sin (sin x)
-      time: 10
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -604,7 +604,7 @@ MonoBehaviour:
       - '{e^{\ln x}}{x}'
       - \frac {e^{\ln x}}{\ln x}
       - \frac {{\ln x}}{x}
-      time: 10
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -620,7 +620,7 @@ MonoBehaviour:
       - ' \frac {\sin x}{\sqrt{1-(\sin x)^2}}'
       - ' \frac {\cos x}{{1-\sin x}}'
       - ' \frac {\cos x}{\sqrt{1-(\cos x)^2}}'
-      time: 10
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -636,7 +636,7 @@ MonoBehaviour:
       - ' \frac {\cos x}{\sqrt{1-\sin (x)^2}}'
       - ' -\frac {\sin x}{\sqrt{1-\sin (x)^2}}'
       - ' \frac {\sin x}{\sqrt{1-\sin (x)^2}}'
-      time: 10
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -652,7 +652,7 @@ MonoBehaviour:
       - \frac {\sin x}{\cos x}
       - -1
       - -\frac {\cos x}{\sin x}
-      time: 10
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -668,7 +668,7 @@ MonoBehaviour:
       - -\frac{1}{2x\sqrt{\ln x}}
       - \frac{x}{2\sqrt{\ln x}}
       - -\frac{x}{2\sqrt{\ln x}}
-      time: 10
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -684,7 +684,7 @@ MonoBehaviour:
       - -\frac{1}{2\cos^2 x\sqrt{tg x}}
       - \frac{1}{2\sin^2 x\sqrt{tg x}}
       - -\frac{1}{2\sin^2 x\sqrt{tg x}}
-      time: 10
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -700,7 +700,7 @@ MonoBehaviour:
       - -\frac{1}{\sqrt{1-x^2}2\sqrt{\arcsin x}}
       - \frac{1}{\sqrt{1-x^2}2\sqrt{\arccos x}}
       - -\frac{1}{\sqrt{1-x^2}2\sqrt{\arccos x}}
-      time: 10
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -716,7 +716,7 @@ MonoBehaviour:
       - \cos(x) \cdot\sin(\sin(x))
       - -\sin(x) \cdot\cos(\sin(x))
       - -\cos(x) \cdot\cos(\cos(x))
-      time: 10
+      time: 20
     - type: 0
       text: "\u041D\u0430\u0439\u0434\u0438\u0442\u0435 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u043D\u0443\u044E
         \u0444\u0443\u043D\u043A\u0446\u0438\u0438"
@@ -732,7 +732,7 @@ MonoBehaviour:
       - \frac{1}{\sqrt{\sin(x)}} \cdot \cos(x)
       - \frac{1}{2}\cdot \frac{1}{\sqrt{\sin(x)}} \cdot \sin(x)
       - \frac{1}{2}\cdot \frac{1}{\sqrt{\cos(x)}} \cdot \sin(x)
-      time: 10
+      time: 20
     difficulty: 0
   - parentBase: {fileID: 11400000}
     levelIndex: 4
