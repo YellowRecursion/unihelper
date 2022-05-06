@@ -30,7 +30,7 @@ MonoBehaviour:
       answers:
       - nx^{n-1}
       - nx^n
-      - '  \frac{x^n}{n}'
+      - ' \frac{x^n}{n}'
       - ' \frac{x^n}{n-1}'
       time: 20
     - type: 0
